@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    image: devops-lab10-app:1.0
+    container_name: devops-lab10-container
+    ports:
+      - "8001:8000"
+    restart: unless-stopped
